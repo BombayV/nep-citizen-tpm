@@ -22,12 +22,12 @@ TeleportToWaypoint = function()
             Wait(5)
         end
     else
-        if ( chatRem ) then
+        if (chatRem) then
             TriggerEvent('chat:addMessage', {
                 color = {255,85,85},
                 args = {"citizen-tpm", "client needs to set a waypoint first."}
             })
-        elseif ( consoleRem ) then
+        elseif (consoleRem) then
             print("client needs to set a waypoint first")
         end
     end
